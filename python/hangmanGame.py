@@ -15,7 +15,7 @@ while failedTries != 7:
     print("Tried letters:")
     print(*triedLetters, sep=", ")
     print(*hashedWord)
-    guessedLetter = input("Type in single letter you think is in the word and confirm with 'enter':\n")
+    guessedLetter = input("Type in single letter you think is in the word and confirm with 'enter':\n").lower()
     if guessedLetter in triedLetters:
         print("You already tried that one.")
         continue
